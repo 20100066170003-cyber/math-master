@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.level-selector button, .controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+.puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+}
+
+.filled {
+    border: 2px solid #5cb85c;
+}
+
+.number-bank {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.draggable {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+/* Drag and Drop styles */
+.dragging {
+    opacity: 0.5;
+}
+
+.drop-target {
+    background-color: #cff4fc;
+    border-color: #007bff;
+}
+
+.game-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 25px; /* Prevent layout shift */
+}
