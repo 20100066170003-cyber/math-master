@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Math Puzzle</h1>
+        
+        <div class="controls">
+            <div class="level-selector">
+                <button onclick="setLevel(1)">Easy (1-10)</button>
+                <button onclick="setLevel(11)">Hard (11-20)</button>
+            </div>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+
+        <div id="puzzle-board" class="puzzle-board"></div>
+
+        <div id="number-bank" class="number-bank"></div>
+
+        <div id="game-message" class="game-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
